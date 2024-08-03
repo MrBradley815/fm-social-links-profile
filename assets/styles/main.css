@@ -1,0 +1,118 @@
+:root {
+  --color-gray-900: #141414;
+  --color-gray-800: #1f1f1f;
+  --color-gray-700: #333333;
+  --color-green-400: #c4f82a;
+  --color-white-400: #ffffff;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: var(--color-white-400);
+  background-color: var(--color-gray-900);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2.4rem;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  text-align: center;
+  background-color: var(--color-gray-800);
+  width: 100%;
+  max-width: 38.4rem;
+  padding: 4rem;
+  border-radius: 1.2rem;
+}
+
+.card-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2.4rem;
+  max-width: 8.8rem;
+  border-radius: 100%;
+}
+
+.card-name {
+  margin-bottom: 0.4rem;
+}
+
+.card-location {
+  color: var(--color-green-400);
+  margin-bottom: 2.4rem;
+}
+
+.card-bio {
+  margin-bottom: 2.4rem;
+}
+
+.card-link-list {
+  list-style: none;
+}
+
+.card-link:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.card-link a {
+  display: block;
+  font-weight: 700;
+  color: var(--color-white-400);
+  background-color: var(--color-gray-700);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.card-link a:hover {
+  color: var(--color-gray-700);
+  background-color: var(--color-green-400);
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 45.6rem;
+  }
+}
+
+@media (max-width: 504px) {
+  .card {
+    padding: 2.4rem;
+  }
+}
